@@ -1,0 +1,74 @@
+$input-background-color: $gray;
+$input-height: 36px;
+$input-placeholder-opacity: 0.4;
+$input-min-width: 200px;
+$input-border-radius: 12px;
+$input-icon-box-width: $input-height;
+$input-icon-box-height: $input-icon-box-width;
+$input-border-width: 2px;
+$input-padding: 7px 13px 7px 10px;
+
+.input-icon {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $input-background-color;
+  border-radius: $input-border-radius;
+  width: $input-icon-box-width;
+  height: $input-icon-box-height;
+  transition: all 0.25s ease;
+  color: inherit;
+}
+
+.input {
+  border: $input-border-width solid transparent;
+  background: $input-background-color;
+  color: $darkestGray;
+  border-radius: $input-border-radius;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  padding: $input-padding;
+  min-width: $input-min-width;
+  height: $input-height;
+
+  &::placeholder {
+    opacity: $input-placeholder-opacity;
+  }
+
+  &:focus,
+  &:focus-visible,
+  &:focus-within {
+    outline: none;
+  }
+
+  &:focus {
+    padding-left: 15px;
+  }
+
+  @each $color, $value in $colors {
+    &.#{$color} {
+      &:active,
+      &:focus {
+        border-bottom-color: $value;
+      }
+
+      &:focus ~ .input-icon {
+        color: $value;
+      }
+
+      &.flat {
+        background-color: tint($value, 85%);
+      }
+
+      &.bordered {
+        border-bottom-color: $value;
+      }
+    }
+  }
+
+  &.square {
+    border-radius: 0;
+  }
+}

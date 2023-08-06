@@ -1,0 +1,30 @@
+$container-gutter-x: $gutter-x;
+$container-gutter-y: $gutter-y;
+$container-sm-width: 540px;
+$container-md-width: 720px;
+$container-lg-width: 960px;
+$container-xl-width: 1140px;
+$container-xxl-width: 1320px;
+
+.container {
+  --sm-width: #{$container-sm-width};
+  --md-width: #{$container-md-width};
+  --lg-width: #{$container-lg-width};
+  --xl-width: #{$container-xl-width};
+  --xxl-width: #{$container-xxl-width};
+
+  padding-right: $container-gutter-x;
+  padding-left: $container-gutter-x;
+  margin: $container-gutter-y auto;
+  max-width: 100%;
+
+  @each $screen, $width in $breakpoints {
+    @media screen and (min-width: $width) {
+      max-width: var(--#{$screen}-width);
+    }
+  }
+
+  &.fluid {
+    max-width: 100%;
+  }
+}
