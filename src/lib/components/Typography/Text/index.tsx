@@ -2,7 +2,7 @@ import React from 'react'
 import { TextProps } from './types'
 import classNames from 'classnames'
 
-const Text = React.forwardRef<HTMLHeadingElement, TextProps>(({
+const Text = React.forwardRef<HTMLSpanElement, TextProps>(({
   children,
   fontSize = 6,
   weight = 400,
@@ -23,7 +23,7 @@ const Text = React.forwardRef<HTMLHeadingElement, TextProps>(({
   ...otherProps
 }, ref) => {
 return (
-  <h1 ref={ref} className={classNames(`text-${color}`, {
+  <span ref={ref} className={classNames(`text-${color}`, {
       'text-truncate': truncate,
       'text-wrap': wrap,
       'text-nowrap': nowrap,
@@ -42,7 +42,7 @@ return (
   {...otherProps}
   >
       {children}
-  </h1>
+  </span>
 )
 })
 

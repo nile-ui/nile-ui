@@ -2,7 +2,7 @@ import React from 'react'
 import { ParagraphProps } from './types'
 import classNames from 'classnames'
 
-const Paragraph = React.forwardRef<HTMLHeadingElement, ParagraphProps>(({
+const Paragraph = React.forwardRef<HTMLParagraphElement, ParagraphProps>(({
   children,
   fontSize = 5,
   weight = 400,
@@ -23,7 +23,7 @@ const Paragraph = React.forwardRef<HTMLHeadingElement, ParagraphProps>(({
   ...otherProps
 }, ref) => {
 return (
-  <h1 ref={ref} className={classNames(`text-${color}`, 'mt-2 mb-4', {
+  <p ref={ref} className={classNames(`text-${color}`, 'mt-2 mb-4', {
       'text-truncate': truncate,
       'text-wrap': wrap,
       'text-nowrap': nowrap,
@@ -42,7 +42,7 @@ return (
   {...otherProps}
   >
       {children}
-  </h1>
+  </p>
 )
 })
 
