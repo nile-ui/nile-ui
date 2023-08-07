@@ -1,5 +1,5 @@
 export interface TableCellProps extends React.DetailedHTMLProps<
-React.HTMLAttributes<HTMLTableCellElement>,
+React.TdHTMLAttributes<HTMLTableCellElement>,
 HTMLTableCellElement> {
     as?: 'th' | 'td'
 }

@@ -5,6 +5,7 @@ import Head from './Head'
 import Footer from './Footer'
 import Row from './Row'
 import Cell from './Cell'
+import Body from './Body'
 
 function Table({children, color, striped, bordered, square, flat, ...otherProps}: TableProps) {
   return (
@@ -22,6 +23,7 @@ function Table({children, color, striped, bordered, square, flat, ...otherProps}
 }
 
 Table.Head = Head
+Table.Body = Body
 Table.Footer = Footer
 Table.Row = Row
 Table.Cell = Cell

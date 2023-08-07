@@ -5,6 +5,7 @@ import Head from './Head';
 import Footer from './Footer';
 import Row from './Row';
 import Cell from './Cell';
+import Body from './Body';
 function Table(_a) {
     var children = _a.children, color = _a.color, striped = _a.striped, bordered = _a.bordered, square = _a.square, flat = _a.flat, otherProps = __rest(_a, ["children", "color", "striped", "bordered", "square", "flat"]);
     return (React.createElement("div", { className: 'has-table' },
@@ -16,6 +17,7 @@ function Table(_a) {
             }) }, otherProps), children)));
 }
 Table.Head = Head;
+Table.Body = Body;
 Table.Footer = Footer;
 Table.Row = Row;
 Table.Cell = Cell;

@@ -1,4 +1,4 @@
-$button-darkestGray: $darkestGray;
+$button-color: $darkestGray;
 $button-background-color: $white;
 $button-border-width: 2px;
 $button-padding: 6px 10px;
@@ -28,14 +28,14 @@ $flat-button-background-color: tint(
   $button-background-color,
   percentage(1 - $flat-button-background-alpha)
 );
-$flat-button-darkestGray: rgba($darkestGray, 0.65);
+$flat-button-color: rgba($darkestGray, 0.65);
 $flat-button-hovered-background-alpha: 0.25;
 $link-button-background-color: $button-background-color;
-$link-button-darkestGray: $button-darkestGray;
+$link-button-color: $button-color;
 $link-button-background-alpha: 0.1;
 $loading-button-spinner-diameter: 16px;
 $loading-button-spinner-width: 3px;
-$loading-button-spinner-color: $button-darkestGray;
+$loading-button-spinner-color: $button-color;
 
 .btn {
   padding: 6px 10px;
@@ -50,7 +50,7 @@ $loading-button-spinner-color: $button-darkestGray;
   border-radius: $button-border-radius;
   cursor: pointer;
   background-color: $button-background-color;
-  color: $button-darkestGray;
+  color: $button-color;
   border: $button-border-width solid transparent;
   background-position: center;
 
@@ -146,12 +146,12 @@ $loading-button-spinner-color: $button-darkestGray;
 
   &.flat {
     background-color: $flat-button-background-color;
-    color: $flat-button-darkestGray;
+    color: $flat-button-color;
     transition: all 0.5s ease;
 
     &:hover {
       background: tint(
-        $flat-button-darkestGray,
+        $flat-button-color,
         percentage(1 - $flat-button-hovered-background-alpha)
       );
       transform: none;
@@ -159,7 +159,7 @@ $loading-button-spinner-color: $button-darkestGray;
     }
 
     &:active {
-      color: $button-darkestGray;
+      color: $button-color;
       background: $button-background-color;
       background-size: 100%;
       transition: all 0.5s ease;
@@ -186,7 +186,7 @@ $loading-button-spinner-color: $button-darkestGray;
   &.link {
     position: relative;
     background-color: transparent;
-    color: $link-button-darkestGray;
+    color: $link-button-color;
     border-color: transparent;
     transition: all 0.5s ease, color 0.6s ease;
 
@@ -217,7 +217,7 @@ $loading-button-spinner-color: $button-darkestGray;
     &:hover {
       transform: translateY(0);
       box-shadow: none;
-      color: $link-button-darkestGray;
+      color: $link-button-color;
 
       &:before {
         opacity: 1;
@@ -228,7 +228,7 @@ $loading-button-spinner-color: $button-darkestGray;
     &:active {
       transform: none;
       box-shadow: none;
-      color: $link-button-darkestGray;
+      color: $link-button-color;
       background: $link-button-background-color;
       background-size: 100%;
 
