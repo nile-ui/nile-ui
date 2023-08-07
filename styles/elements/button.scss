@@ -231,7 +231,10 @@ $loading-button-spinner-color: $button-darkestGray;
       color: $link-button-darkestGray;
       background: $link-button-background-color;
       background-size: 100%;
-      transition: all 0s;
+
+      &:before {
+        opacity: 0;
+      }
     }
   }
 
