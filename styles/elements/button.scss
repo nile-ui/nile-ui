@@ -77,6 +77,10 @@ $loading-button-spinner-color: $button-color;
     border-radius: 99999px !important;
   }
 
+  &.circle {
+    border-radius: 50% !important;
+  }
+
   &.square {
     border-radius: 0 !important;
   }

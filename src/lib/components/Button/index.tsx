@@ -11,11 +11,13 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(({
     flat,
     square,
     pill,
+    circle,
     block,
     loading,
     floating,
     noFloat,
     link,
+    icon,
     ...buttonProps
 }, ref) => {
     return (
@@ -30,7 +32,9 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(({
                 'floating': floating,
                 'no-float': noFloat,
                 'link': link,
-                'loading': loading
+                'loading': loading,
+                'icon': icon,
+                'circle': circle,
             }, className)}
             {...buttonProps}
         >

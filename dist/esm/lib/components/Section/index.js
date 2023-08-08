@@ -14,7 +14,7 @@ export default function Section(_a) {
         }
         return title;
     }, [title, titleProps, titleRef]);
-    return (React.createElement("div", { className: classNames('section', className) },
+    return (React.createElement("section", { className: classNames('section', className) },
         wrapTitleWithContainer ? React.createElement(Container, null, titleElement) : titleElement,
         children));
 }

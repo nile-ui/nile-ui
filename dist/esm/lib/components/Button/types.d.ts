@@ -7,9 +7,11 @@ export interface ButtonProps extends React.DetailedHTMLProps<React.ButtonHTMLAtt
     size?: NileSize;
     square?: boolean;
     pill?: boolean;
+    circle?: boolean;
     block?: boolean;
     floating?: boolean;
     noFloat?: boolean;
     link?: boolean;
     loading?: boolean;
+    icon?: boolean;
 }

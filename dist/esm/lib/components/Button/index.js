@@ -2,7 +2,7 @@ import { __assign, __rest } from "tslib";
 import React, { forwardRef } from 'react';
 import classNames from 'classnames';
 var Button = forwardRef(function (_a, ref) {
-    var className = _a.className, color = _a.color, _b = _a.size, size = _b === void 0 ? "md" : _b, bordered = _a.bordered, children = _a.children, flat = _a.flat, square = _a.square, pill = _a.pill, block = _a.block, loading = _a.loading, floating = _a.floating, noFloat = _a.noFloat, link = _a.link, buttonProps = __rest(_a, ["className", "color", "size", "bordered", "children", "flat", "square", "pill", "block", "loading", "floating", "noFloat", "link"]);
+    var className = _a.className, color = _a.color, _b = _a.size, size = _b === void 0 ? "md" : _b, bordered = _a.bordered, children = _a.children, flat = _a.flat, square = _a.square, pill = _a.pill, circle = _a.circle, block = _a.block, loading = _a.loading, floating = _a.floating, noFloat = _a.noFloat, link = _a.link, icon = _a.icon, buttonProps = __rest(_a, ["className", "color", "size", "bordered", "children", "flat", "square", "pill", "circle", "block", "loading", "floating", "noFloat", "link", "icon"]);
     return (React.createElement("button", __assign({ ref: ref, className: classNames('btn', color, size, {
             'square': square,
             'bordered': bordered,
@@ -12,7 +12,9 @@ var Button = forwardRef(function (_a, ref) {
             'floating': floating,
             'no-float': noFloat,
             'link': link,
-            'loading': loading
+            'loading': loading,
+            'icon': icon,
+            'circle': circle
         }, className) }, buttonProps), children));
 });
 export default Button;

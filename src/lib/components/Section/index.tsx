@@ -19,9 +19,9 @@ export default function Section({className, children, title, titleProps, titleRe
   }, [title, titleProps, titleRef])
 
   return (
-    <div className={classNames('section', className)}>
+    <section className={classNames('section', className)}>
       {wrapTitleWithContainer ? <Container>{titleElement}</Container> : titleElement}
       {children}
-    </div>
+    </section>
   )
 }
