@@ -1,6 +1,6 @@
 import React from 'react';
 import { TableProps } from './types';
-declare function Table({ children, color, striped, bordered, square, flat, ...otherProps }: TableProps): React.JSX.Element;
+declare function Table({ children, color, striped, bordered, square, flat, hoverable, ...otherProps }: TableProps): React.JSX.Element;
 declare namespace Table {
     var Head: typeof import("./Head").default;
     var Body: typeof import("./Body").default;

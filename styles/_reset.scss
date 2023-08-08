@@ -13,6 +13,7 @@ body {
   outline: none !important;
   box-sizing: border-box;
   scroll-behavior: smooth !important;
+  -webkit-tap-highlight-color: transparent !important;
 }
 
 a {

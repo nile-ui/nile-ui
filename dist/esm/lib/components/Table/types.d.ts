@@ -6,4 +6,5 @@ export interface TableProps extends React.DetailedHTMLProps<React.HTMLAttributes
     striped?: boolean;
     square?: boolean;
     bordered?: boolean;
+    hoverable?: boolean;
 }
