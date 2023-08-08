@@ -9,4 +9,5 @@ HTMLTableElement
     striped?: boolean
     square?: boolean
     bordered?: boolean
+    hoverable?: boolean
 }

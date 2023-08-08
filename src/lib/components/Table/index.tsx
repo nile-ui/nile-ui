@@ -7,7 +7,7 @@ import Row from './Row'
 import Cell from './Cell'
 import Body from './Body'
 
-function Table({children, color, striped, bordered, square, flat, ...otherProps}: TableProps) {
+function Table({children, color, striped, bordered, square, flat, hoverable = true, ...otherProps}: TableProps) {
   return (
     <div className='has-table'>
         <table className={classNames('table', color, {
@@ -15,6 +15,7 @@ function Table({children, color, striped, bordered, square, flat, ...otherProps}
             'square': square,
             'striped': striped,
             'flat': flat,
+            'hoverable': hoverable,
         })} {...otherProps}>
             {children}
         </table>

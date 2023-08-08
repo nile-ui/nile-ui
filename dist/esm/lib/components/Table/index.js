@@ -7,13 +7,14 @@ import Row from './Row';
 import Cell from './Cell';
 import Body from './Body';
 function Table(_a) {
-    var children = _a.children, color = _a.color, striped = _a.striped, bordered = _a.bordered, square = _a.square, flat = _a.flat, otherProps = __rest(_a, ["children", "color", "striped", "bordered", "square", "flat"]);
+    var children = _a.children, color = _a.color, striped = _a.striped, bordered = _a.bordered, square = _a.square, flat = _a.flat, _b = _a.hoverable, hoverable = _b === void 0 ? true : _b, otherProps = __rest(_a, ["children", "color", "striped", "bordered", "square", "flat", "hoverable"]);
     return (React.createElement("div", { className: 'has-table' },
         React.createElement("table", __assign({ className: classNames('table', color, {
                 'bordered': bordered,
                 'square': square,
                 'striped': striped,
-                'flat': flat
+                'flat': flat,
+                'hoverable': hoverable
             }) }, otherProps), children)));
 }
 Table.Head = Head;

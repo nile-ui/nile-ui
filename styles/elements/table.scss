@@ -10,6 +10,7 @@ $table-cell-font-size: $table-header-font-size;
 $bordered-table-border-style: dashed;
 $striped-table-odd-background: $white;
 $striped-table-even-background: $table-header-background;
+$hoverable-table-row-background: $lightGray;
 
 .table {
   border-collapse: collapse;
@@ -86,6 +87,14 @@ $striped-table-even-background: $table-header-background;
       
       tr:nth-child(2n) {
         background-color: $striped-table-even-background;
+      }
+    }
+  }
+
+  &.hoverable {
+    tbody {
+      tr:hover {
+        background-color: $hoverable-table-row-background;
       }
     }
   }
