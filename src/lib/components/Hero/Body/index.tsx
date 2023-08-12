@@ -1,14 +1,12 @@
 import classNames from 'classnames'
 import React from 'react'
+import { HeroBodyProps } from './types'
 
 export default function Body({
   children,
   className,
   ...otherProps
-}: React.DetailedHTMLProps<
-  React.HTMLAttributes<HTMLDivElement>,
-  HTMLDivElement
->) {
+}: HeroBodyProps) {
   return (
     <div {...otherProps} className={classNames('hero-body', className)}>
       {children}
