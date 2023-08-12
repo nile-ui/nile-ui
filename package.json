@@ -43,6 +43,7 @@
       "last 1 safari version"
     ]
   },
+  "style": "./src/scss/index.scss",
   "main": "./dist/esm/index.js",
   "types": "./dist/esm/index.d.ts",
   "exports": {

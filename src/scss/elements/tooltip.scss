@@ -12,6 +12,7 @@ $flat-tooltip-background-alpha: $flat-color-alpha;
   &:hover {
     .tooltip {
       display: block;
+      animation: fade-in 0.7s ease;
     }
   }
 }
@@ -63,9 +64,9 @@ $flat-tooltip-background-alpha: $flat-color-alpha;
   }
 
   &.right {
-    left: auto;
+    left: 102%;
     top: 50%;
-    transform: translate(90%, -50%);
+    transform: translate(0, -50%);
 
     &:after {
       bottom: inherit;

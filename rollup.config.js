@@ -12,11 +12,13 @@ export default [
       {
         file: "dist/index.common.js",
         format: "cjs",
+        sourcemap: true,
       },
       {
         file: "dist/index.es.js",
         format: "es",
         exports: "named",
+        sourcemap: true,
       },
       {
         dir: "dist/esm/",
@@ -26,9 +28,12 @@ export default [
     ],
     plugins: [
       scss({
+        fileName: 'nile-ui.css',
+        sourceMap: true,
         output: true,
         failOnError: true,
         outputStyle: "compressed",
+        include: ['./src/scss/**/*.scss'],
       }),
       babel({
         exclude: "node_modules/**",
@@ -36,7 +41,9 @@ export default [
       }),
       external(),
       resolve({ browser : true }),
-      typescript(),
+      typescript({
+        sourceMap: true,
+      }),
       terser(),
     ],
 

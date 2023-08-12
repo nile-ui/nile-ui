@@ -1,4 +1,4 @@
-import { NileColor } from "../../types";
+import { NileColor } from "../../uiTypes";
 
 export interface TableProps extends React.DetailedHTMLProps<
 React.HTMLAttributes<HTMLTableElement>,

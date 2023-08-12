@@ -28,7 +28,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(({
                 'bordered': bordered,
                 'block': block,
                 'flat': flat,
-                'pill': pill,
+                'border-radius-pill': pill,
                 'floating': floating,
                 'no-float': noFloat,
                 'link': link,

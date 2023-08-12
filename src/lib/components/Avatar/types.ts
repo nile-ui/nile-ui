@@ -1,5 +1,5 @@
 import React from 'react'
-import { NileColor, NilePosition, NileSize } from '../../types'
+import { NileColor, NileDetailedPosition, NileSize } from '../../uiTypes'
 
 export interface AvatarProps extends React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement> {
     color?: NileColor
@@ -12,5 +12,5 @@ export interface AvatarProps extends React.DetailedHTMLProps<React.HTMLAttribute
     showBadge?: boolean
     badgeContent?: React.ReactNode
     badgeColor?: NileColor
-    badgePosition?: NilePosition
+    badgePosition?: NileDetailedPosition
 }

@@ -23,6 +23,12 @@ export type NileSizeDownMD = "mini" | "sm";
 export type NileSize = NileSizeDownMD | NileSizeUpMD;
 
 export type NilePosition =
+  | "top"
+  | "right"
+  | "bottom"
+  | "right";
+
+export type NileDetailedPosition =
   | "top-left"
   | "top-right"
   | "bottom-left"

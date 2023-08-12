@@ -1,5 +1,5 @@
 import React from 'react'
-import { TextProps } from './types'
+import { TextProps } from './textTypes'
 import classNames from 'classnames'
 
 const Text = React.forwardRef<HTMLSpanElement, TextProps>(({

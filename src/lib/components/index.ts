@@ -1,6 +1,8 @@
+// Types
+import { TooltipProps } from './Tooltip/types'
 import { HeroBodyProps } from './Hero/Body/types'
 import { HeroProps } from './Hero/types'
-import { TextProps } from './../../../dist/esm/lib/components/Typography/Text/types.d'
+import { TextProps } from './Typography/Text/textTypes'
 import { ParagraphProps } from './Typography/Paragraph/types'
 import { TitleProps } from './Typography/Title/types'
 import { SubtitleProps } from './Typography/Subtitle/types'
@@ -15,8 +17,7 @@ import { SectionProps } from './Section/types'
 import { ColProps } from './Grid/Col/types'
 import { ContainerProps } from './Container/types'
 import { ButtonProps } from './Button/types'
-import './scss/index.scss'
-
+// Components
 import Button from './Button'
 import Container from './Container'
 import Col from './Grid/Col'
@@ -26,6 +27,7 @@ import Row from './Grid/Row'
 import { Subtitle, Title, Paragraph, Text } from './Typography'
 import Hero from './Hero'
 import Avatar from './Avatar'
+import Tooltip from './Tooltip'
 
 export {
   Avatar,
@@ -40,6 +42,7 @@ export {
   Row,
   Col,
   Hero,
+  Tooltip,
   // Props
   ButtonProps,
   ContainerProps,
@@ -57,5 +60,6 @@ export {
   ParagraphProps,
   TextProps,
   HeroProps,
-  HeroBodyProps
+  HeroBodyProps,
+  TooltipProps
 }

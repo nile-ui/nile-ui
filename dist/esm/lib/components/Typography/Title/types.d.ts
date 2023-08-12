@@ -1,5 +1,5 @@
 import React from "react";
-import { NileTextColor } from "../../../types";
+import { NileTextColor } from "../../../uiTypes";
 export type TitleComponentProps = {
     variant?: 1 | 2 | 3 | 4 | 5;
     fontSize?: 1 | 2 | 3 | 4 | 5 | 6;

@@ -1,4 +1,5 @@
 import type { Preview } from "@storybook/react";
+import '../dist/nile-ui.css'
 
 const preview: Preview = {
   parameters: {

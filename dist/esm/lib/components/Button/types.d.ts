@@ -1,5 +1,5 @@
 import React from 'react';
-import { NileColor, NileSize } from "../../types";
+import { NileColor, NileSize } from "../../uiTypes";
 export interface ButtonProps extends React.DetailedHTMLProps<React.ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement> {
     bordered?: boolean;
     flat?: boolean;

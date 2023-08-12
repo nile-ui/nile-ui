@@ -1,5 +1,5 @@
 import React from "react";
-import { NileTextColor } from "../../../types";
+import { NileTextColor } from "../../../uiTypes";
 export type SubtitleComponentProps = {
     fontSize?: 1 | 2 | 3 | 4 | 5 | 6;
     weight?: 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900;
