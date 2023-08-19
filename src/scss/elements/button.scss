@@ -54,7 +54,6 @@ $loading-button-spinner-color: $button-color;
   &:hover {
     transform: translateY(-3px);
     box-shadow: 0 8px 25px 0 rgba(0, 0, 0, 0.1);
-    scale: 1.025;
   }
 
   &:active {

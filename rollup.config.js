@@ -5,6 +5,7 @@ import scss from "rollup-plugin-scss";
 import typescript from "@rollup/plugin-typescript";
 import { terser } from "rollup-plugin-terser";
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default [
   {
     input: "./src/index.ts",

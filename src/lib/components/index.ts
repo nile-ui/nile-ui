@@ -17,6 +17,8 @@ import { SectionProps } from './Section/types'
 import { ColProps } from './Grid/Col/types'
 import { ContainerProps } from './Container/types'
 import { ButtonProps } from './Button/types'
+import { ButtonGroupProps } from './ButtonGroup/types'
+import { TagProps } from './Tag/types'
 // Components
 import Button from './Button'
 import Container from './Container'
@@ -28,10 +30,13 @@ import { Subtitle, Title, Paragraph, Text } from './Typography'
 import Hero from './Hero'
 import Avatar from './Avatar'
 import Tooltip from './Tooltip'
+import Tag from './Tag'
+import ButtonGroup from './ButtonGroup'
 
 export {
   Avatar,
   Button,
+  ButtonGroup,
   Container,
   Section,
   Title,
@@ -43,8 +48,10 @@ export {
   Col,
   Hero,
   Tooltip,
+  Tag,
   // Props
   ButtonProps,
+  ButtonGroupProps,
   ContainerProps,
   ColProps,
   SectionProps,
@@ -61,5 +68,6 @@ export {
   TextProps,
   HeroProps,
   HeroBodyProps,
-  TooltipProps
+  TooltipProps,
+  TagProps
 }
